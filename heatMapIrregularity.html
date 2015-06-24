@@ -1,0 +1,80 @@
+<html>
+
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9" />
+        <!--The viewport meta tag is used to improve the presentation and behavior
+        of the samples on iOS devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Voting</title>
+    <link rel="shortcut icon" type="image/png" href="http://www.patrick-wied.at/img/favicon.png" />
+
+        <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.10/js/dojo/dijit/themes/claro/claro.css">
+		<link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.10/js/esri/css/esri.css" />
+        <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+        <style>
+            html, body, #main, #map {
+            height: 100%;
+            width: 100%;        
+        }
+        </style>
+        <link rel="stylesheet" type="text/css" href="http://js.arcgis.com/3.10/js/esri/dijit/css/Popup.css"/>
+    </head>
+<body class="claro">
+ <div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Voting</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Пријави неправилност</a></li>
+          <li><a href="allVotingPlaces.html">Преглед избирачки места</a></li>
+          <li><a href="showIncidentsByType.html">Преглед типови неправилности</a></li>
+          <li class="active"><a href="#">Преглед неправилности</a></li>
+        </ul>
+      
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>       
+<div id="main">      	
+    <div id="heatmapArea" style="margin-top: -1.5%">
+        <div id="heatLayer"></div>
+        <div id="map"></div>
+    </div>           
+</div>
+  <div class="panel panel-primary panel-fixed" style="margin-top: 2.8%">
+    <div class="panel-heading">
+      <h3 class="panel-title">Неправилности парламентарни избори 2014</h3>
+    </div>
+  </div>      
+</body>
+    <script type="text/javascript">
+        // get current path
+            var pathRegex = new RegExp(/\/[^\/]+$/);
+            var locationPath = location.pathname.replace(pathRegex, '');
+            // Dojo Config
+            var dojoConfig = {
+                packages: [
+                    {
+                        name: "application",
+                        location: locationPath + '/js/'
+                    }
+                ]
+            };
+        </script>
+        <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+        <script type="text/javascript" src="http://js.arcgis.com/3.10/"></script>
+        <script type="text/javascript" src="js/heatmap.js"></script>
+        <script type="text/javascript" src="js/heatMapDataLayer.js"></script>
+</html>

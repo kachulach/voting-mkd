@@ -1,0 +1,78 @@
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=7,IE=9">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1,user-scalable=no">
+  <title>Voting</title>
+  <link rel="shortcut icon" href="http://esri.github.io/quickstart-map-js/images/favicon.ico">
+  <!-- ArcGIS API for JavaScript CSS-->
+  <link rel="stylesheet" href="http://js.arcgis.com/3.10/js/esri/css/esri.css">
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+  <style>
+    html, body, #mapDiv {
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+  <!-- ArcGIS API for JavaScript library references -->
+  <script src="http://js.arcgis.com/3.10compact/init.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+  <!-- CORE -->
+  <script src="js/allVotingPlaces.js"></script>
+</head>
+<body>
+<div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Voting</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Пријави неправилност</a></li>
+          <li class="active"><a href="#">Преглед избирачки места</a></li>
+          <li><a href="showIncidentsByType.html">Преглед типови неправилности</a></li>
+           <li><a href="heatMapIrregularity.html">Преглед неправилности</a></li>
+        </ul>
+      
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>
+
+  <div class="panel panel-primary panel-fixed" style="margin-top: 2.8%">
+    <div class="panel-heading">
+      <h3 class="panel-title">Избирачки единица во Македонија</h3>
+    </div>
+    <div class="panel-body" align="left">
+         <svg height="20" width="20">
+           <circle cx="10" cy="14" r="6" fill="#F44336"/>
+        </svg><span>Избирачка единица 1</span> </br>
+        <svg height="20" width="20">
+           <circle cx="10" cy="14" r="6" fill="#3F51B5"/>
+        </svg><span>Избирачка единица 2</span> </br>
+         <svg height="20" width="20">
+           <circle cx="10" cy="14" r="6" fill="#009688"/>
+        </svg><span>Избирачка единица 3</span> </br>
+        <svg height="20" width="20">
+           <circle cx="10" cy="14" r="6" fill="#9b59b6"/>
+        </svg><span>Избирачка единица 4</span> </br>
+        <svg height="20" width="20">
+           <circle cx="10" cy="14" r="6" fill="#FFC107"/>
+        </svg><span>Избирачка единица 5</span> </br>
+        <svg height="20" width="20">
+           <circle cx="10" cy="14" r="6" fill="#4CAF50"/>
+        </svg><span>Избирачка единица 6</span> </br>
+    </div>
+  </div>
+  <div id="mapDiv" style="margin-top: -1.5%"></div>
+</body>
+</html>

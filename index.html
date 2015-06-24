@@ -1,0 +1,124 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Voting</title>
+    <link rel="shortcut icon" type="image/png" href="http://www.patrick-wied.at/img/favicon.png" />
+	
+	<script src="js/jquery-1.11.2.js"></script>
+	<script src="js/bootstrap.js"></script>
+	<script src="js/select2-3.5.2/select2.js"></script>
+	<script src="js/select2-3.5.2/select2_locale_mk.js"></script>
+	
+	<link href="js/select2-3.5.2/select2.css" rel="stylesheet">
+	<link href="js/select2-3.5.2/select2-bootstrap.css" rel="stylesheet">
+	<link href="css/bootstrap.css" rel="stylesheet">	
+	<link href="css/bootstrap-theme.css" rel="stylesheet">
+	
+
+	<link rel="shortcut icon" href="http://esri.github.io/quickstart-map-js/images/favicon.ico">
+	<!-- ArcGIS API for JavaScript CSS-->
+	<link rel="stylesheet" href="http://js.arcgis.com/3.10/js/esri/css/esri.css">
+	<!-- Web Framework CSS - Bootstrap (getbootstrap.com) and Bootstrap-map-js (github.com/esri/bootstrap-map-js) -->
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="http://esri.github.io/bootstrap-map-js/src/css/bootstrapmap.css">
+	<style>
+		html, body, #mapDiv {
+		height: 100%;
+		width: 100%;		
+    }
+	#irregPanel{
+		position: relative;
+		top: -600px;
+		left: -50px;
+	
+	}
+</style>
+	<!-- ArcGIS API for JavaScript library references -->
+	<script src="http://js.arcgis.com/3.10compact/init.js"></script>	
+	<script src="http://requirejs.org/docs/release/2.1.15/comments/require.js"></script>
+	<script src="js/custom.js"></script>
+	<script src="js/customMap.js"></script>	
+	
+</head>
+
+<body>
+
+<div>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Voting</a>
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Пријави неправилност</a></li>
+          <li><a href="allVotingPlaces.html">Преглед избирачки места</a></li>
+          <li><a href="showIncidentsByType.html">Преглед типови неправилности</a></li>
+           <li><a href="heatMapIrregularity.html">Преглед неправилности</a></li>
+        </ul>
+      
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </nav>
+</div>
+	<div id="mapDiv" style="margin-top: -1.5%"></div>	
+
+	
+	<div id="irregPanel" class="col-xs-offset-1 col-xs-3 panel panel-default">
+	  
+	  <div class="panel-body">
+
+			<form id="irregularityForm" action='http://voting.zor-komerc.mk/insertIrregularityMarta.php'>
+			  <fieldset>
+				<div class="form-group">
+				  <label>Гласачка единица</label>
+				  <select id="votingUnitSelect" class="form-control">
+				  </select>
+				</div>
+				<div class="form-group">
+				  <label>Избирачко место</label>
+				  <select id="votingPlaceSelect" class="form-control">
+				  </select>
+				</div>
+				<div class="form-group">
+				  <label>Локација</label>
+				  <select name="votingLocationSelect" id="votingLocationSelect" class="form-control">
+				  </select>
+				</div>
+				<div class="form-group">
+				  <label>Тип на неправилност</label>
+				  <select name="irregularityTypeSelect" id="irregularityTypeSelect" class="form-control">
+				  </select>
+				</div>
+				<div class="form-group">
+				  <label>Опис на неправилност</label>
+				  <textarea name="description" id="description" class="form-control" rows="3"></textarea>
+				</div>
+				<button id="submit" type="submit" class="btn btn-primary" onclick="submitForm()">Внеси</button>
+			  </fieldset>
+			</form>
+	
+	  </div>
+	</div>
+	
+	
+	<input id="hiddenLong" value="" hidden>
+	<input id="hiddenLat" value="" hidden>
+
+
+</body>
+</html>

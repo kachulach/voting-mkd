@@ -1,0 +1,34 @@
+[05-Jan-2015 13:44:08 Europe/Skopje] PHP Warning:  mysqli::mysqli(): (42000/1044): Access denied for user 'cpfqeivo_voting'@'cpanel1.gohost.mk' to database 'cpfqeivo_dbaVoting' in /newhome/cpfqeivo/public_html/voting/connection.php on line 2
+[05-Jan-2015 14:04:28 Europe/Skopje] PHP Warning:  mysql_query(): Access denied for user 'cpfqeivo'@'localhost' (using password: NO) in /newhome/cpfqeivo/public_html/voting/getVotingPlaces.php on line 3
+[05-Jan-2015 14:04:28 Europe/Skopje] PHP Warning:  mysql_query(): A link to the server could not be established in /newhome/cpfqeivo/public_html/voting/getVotingPlaces.php on line 3
+[05-Jan-2015 14:04:28 Europe/Skopje] PHP Warning:  mysql_fetch_assoc() expects parameter 1 to be resource, boolean given in /newhome/cpfqeivo/public_html/voting/getVotingPlaces.php on line 5
+[05-Jan-2015 14:09:35 Europe/Skopje] PHP Fatal error:  Class 'mysql' not found in /newhome/cpfqeivo/public_html/voting/connection.php on line 2
+[05-Jan-2015 14:54:54 Europe/Skopje] PHP Warning:  Cannot modify header information - headers already sent by (output started at /newhome/cpfqeivo/public_html/voting/connection.php:14) in /newhome/cpfqeivo/public_html/voting/getAllVotingPlaces.php on line 3
+[05-Jan-2015 14:59:37 Europe/Skopje] PHP Warning:  Cannot modify header information - headers already sent by (output started at /newhome/cpfqeivo/public_html/voting/connection.php:14) in /newhome/cpfqeivo/public_html/voting/getVotingPlaces.php on line 3
+[05-Jan-2015 19:10:49 Europe/Skopje] PHP Parse error:  syntax error, unexpected end of file in /newhome/cpfqeivo/public_html/voting/incidentsById.php on line 45
+[05-Jan-2015 19:14:42 Europe/Skopje] PHP Parse error:  syntax error, unexpected end of file in /newhome/cpfqeivo/public_html/voting/incidentsByIrregularityId.php on line 43
+[06-Jan-2015 12:30:00 Europe/Skopje] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /newhome/cpfqeivo/public_html/voting/votingLocationMarta.php on line 10
+[06-Jan-2015 12:30:00 Europe/Skopje] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /newhome/cpfqeivo/public_html/voting/votingLocationMarta.php on line 11
+[06-Jan-2015 12:43:32 Europe/Skopje] PHP Warning:  Cannot modify header information - headers already sent by (output started at /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php:1) in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 3
+[06-Jan-2015 12:43:32 Europe/Skopje] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 10
+[06-Jan-2015 12:43:32 Europe/Skopje] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 11
+[06-Jan-2015 12:43:32 Europe/Skopje] PHP Fatal error:  Call to a member function query() on a non-object in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 20
+[06-Jan-2015 12:43:38 Europe/Skopje] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /newhome/cpfqeivo/public_html/voting/votingPlaceMarta.php on line 10
+[06-Jan-2015 12:43:38 Europe/Skopje] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /newhome/cpfqeivo/public_html/voting/votingPlaceMarta.php on line 11
+[06-Jan-2015 12:43:38 Europe/Skopje] PHP Fatal error:  Call to a member function query() on a non-object in /newhome/cpfqeivo/public_html/voting/votingPlaceMarta.php on line 24
+[06-Jan-2015 12:50:09 Europe/Skopje] PHP Warning:  Cannot modify header information - headers already sent by (output started at /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php:1) in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 3
+[06-Jan-2015 12:50:09 Europe/Skopje] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 10
+[06-Jan-2015 12:50:09 Europe/Skopje] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 11
+[06-Jan-2015 12:50:09 Europe/Skopje] PHP Fatal error:  Call to a member function query() on a non-object in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 20
+[06-Jan-2015 12:52:52 Europe/Skopje] PHP Warning:  Cannot modify header information - headers already sent by (output started at /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php:1) in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 3
+[06-Jan-2015 12:52:52 Europe/Skopje] PHP Warning:  mysqli_connect(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 10
+[06-Jan-2015 12:52:52 Europe/Skopje] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 11
+[06-Jan-2015 12:52:52 Europe/Skopje] PHP Fatal error:  Call to a member function query() on a non-object in /newhome/cpfqeivo/public_html/voting/votingUnitsMarta.php on line 20
+[06-Jan-2015 13:13:38 Europe/Skopje] PHP Parse error:  syntax error, unexpected '{' in /newhome/cpfqeivo/public_html/voting/insertIncident.php on line 23
+[06-Jan-2015 13:15:55 Europe/Skopje] PHP Fatal error:  Call to a member function close() on a non-object in /newhome/cpfqeivo/public_html/voting/insertIncidentWithPost.php on line 31
+[06-Jan-2015 19:15:43 Europe/Skopje] PHP Warning:  mysqli_close() expects parameter 1 to be mysqli, null given in /newhome/cpfqeivo/public_html/voting/votingLocationLogLat.php on line 39
+[06-Jan-2015 21:03:49 Europe/Skopje] PHP Warning:  Cannot modify header information - headers already sent by (output started at /newhome/cpfqeivo/public_html/voting/connection.php:14) in /newhome/cpfqeivo/public_html/voting/insertIrregularityMarta.php on line 25
+[13-Jan-2015 18:07:51 Europe/Skopje] PHP Parse error:  syntax error, unexpected 'var' (T_VAR) in /newhome/cpfqeivo/public_html/voting/incidentsHeatmap.php on line 19
+[13-Jan-2015 18:08:57 Europe/Skopje] PHP Parse error:  syntax error, unexpected '}', expecting ',' or ';' in /newhome/cpfqeivo/public_html/voting/incidentsHeatmap1.php on line 21
+[13-Jan-2015 18:14:14 Europe/Skopje] PHP Fatal error:  Cannot use object of type stdClass as array in /newhome/cpfqeivo/public_html/voting/incidentsHeatmap2.php on line 21
+[13-Jan-2015 18:16:50 Europe/Skopje] PHP Fatal error:  Cannot use object of type stdClass as array in /newhome/cpfqeivo/public_html/voting/incidentsHeatmap3.php on line 19
